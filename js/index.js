@@ -93,6 +93,18 @@
 	    	name:"Dave Ross"
 	    },
 	    {
+	    	quote:"Hampton and I decided, we're going to fuck in front of Aristotle.",
+	    	name:"Dave Ross"
+	    },
+	    {
+	    	quote:"That monk who set himself on fire, a video of that just with 'So you had a bad day.",
+	    	name:"Dave Ross"
+	    },
+	    {
+	    	quote:"[Christopher Walken voice] Two mice fell into a bucket of butter. One of the mice drowned instantly.",
+	    	name:"Hampton Yount"
+	    },
+	    {
 	    	quote:"I'm a flat mooner.",
 	    	name:"Dave Ross"
 	    },

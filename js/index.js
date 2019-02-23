@@ -85,8 +85,8 @@
 	    	name:"Ellen DeGeneres"
 	    },
 	    {
-	    	quote:"Don't sweat the petty things and don't pet the sweaty things.",
-	    	name:"George Carlin"
+	    	quote:"Y'all ever fuck your shit?",
+	    	name:"Dave Ross"
 	    },
 	    {
 	    	quote:"Get rich or die horny.",

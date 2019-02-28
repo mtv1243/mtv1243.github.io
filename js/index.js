@@ -85,7 +85,7 @@
 	    	name:"Ellen DeGeneres"
 	    },
 	    {
-	    	quote:"Y'all ever fuck your shit?",
+	    	quote:"Y'all ever fuck yer shit?",
 	    	name:"Dave Ross"
 	    },
 	    {
@@ -106,6 +106,18 @@
 	    },
 	    {
 	    	quote:"I'm a flat mooner.",
+	    	name:"Dave Ross"
+	    },
+	    {
+	    	quote:"Wow, black Alex Jones is more intense than white Alex Jones.",
+	    	name:"Dave Ross"
+	    },
+	    {
+	    	quote:"A guy named Myles Austin bought blackinfowars.com and made a very simple website that has a Suicide Buddies quote generator on it.",
+	    	name:"Dave Ross"
+	    },
+	    {
+	    	quote:"Welcome to Suicide Buddies, home of the Whopper©.",
 	    	name:"Dave Ross"
 	    },
 	    {

@@ -121,6 +121,10 @@
 	    	name:"Dave Ross"
 	    },
 	    {
+	    	quote:"We Bought A Zoo 2: White Privelege.",
+	    	name:"Hampton Yount"
+	    },
+	    {
 	    	quote:"Hapiness is not something ready made. It comes from your own actions.",
 	    	name:"Dalai Lama"
 	    }

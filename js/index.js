@@ -121,7 +121,7 @@
 	    	name:"Dave Ross"
 	    },
 	    {
-	    	quote:"We Bought A Zoo 2: White Privelege.",
+	    	quote:"We Bought A Zoo 2: White Privilege.",
 	    	name:"Hampton Yount"
 	    },
 	    {

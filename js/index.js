@@ -1,3 +1,54 @@
+// ACCORDION SCRIPT
+(function($) {
+    // $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+    $('.accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('p');
+
+        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+})(jQuery);
+
+// DAVE'S ANIMATION SCROLLING TRIGGER
+$(document).on('scroll',function(){
+  if($(document).scrollTop() > 650 ) {
+    $('.d_pic').addClass('slidefromright land_right')
+  };
+});
+
+// HAMPTON'S ANIMATION SCROLLING TRIGGER
+$(document).on('scroll',function(){
+  if($(document).scrollTop() > 650 ) {
+    $('.h_pic').addClass('slidefromleft land_left')
+  };
+});
+
+// Scroll to Hosts section on click
+$("#scrollHosts").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#scrollToHosts").offset().top
+    }, 1500);
+});
+
+// Scroll to Quotes section on click
+$("#scrollQuotes").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#scrollToQuotes").offset().top
+    }, 1500);
+});
+
+// QUOTE GENERATOR
 	$(document).ready(function(){
 		var quoteSource=[
 		{
@@ -85,44 +136,16 @@
 	    	name:"Ellen DeGeneres"
 	    },
 	    {
-	    	quote:"Y'all ever fuck yer shit?",
-	    	name:"Dave Ross"
+	    	quote:"Don't sweat the petty things and don't pet the sweaty things.",
+	    	name:"George Carlin"
 	    },
 	    {
 	    	quote:"Get rich or die horny.",
 	    	name:"Dave Ross"
 	    },
 	    {
-	    	quote:"Hampton and I decided, we're going to fuck in front of Aristotle.",
-	    	name:"Dave Ross"
-	    },
-	    {
-	    	quote:"That monk who set himself on fire, a video of that just with 'So you had a bad day.",
-	    	name:"Dave Ross"
-	    },
-	    {
-	    	quote:"[Christopher Walken voice] Two mice fell into a bucket of butter. One of the mice drowned instantly.",
-	    	name:"Hampton Yount"
-	    },
-	    {
 	    	quote:"I'm a flat mooner.",
 	    	name:"Dave Ross"
-	    },
-	    {
-	    	quote:"Wow, black Alex Jones is more intense than white Alex Jones.",
-	    	name:"Dave Ross"
-	    },
-	    {
-	    	quote:"A guy named Myles Austin bought blackinfowars.com and made a very simple website that has a Suicide Buddies quote generator on it.",
-	    	name:"Dave Ross"
-	    },
-	    {
-	    	quote:"Welcome to Suicide Buddies, home of the Whopper©.",
-	    	name:"Dave Ross"
-	    },
-	    {
-	    	quote:"We Bought A Zoo 2: White Privilege.",
-	    	name:"Hampton Yount"
 	    },
 	    {
 	    	quote:"Hapiness is not something ready made. It comes from your own actions.",
@@ -157,9 +180,47 @@
       });  
 			
 			break;
-		};//end for loop
+		}//end for loop
 	
 	});//end quoteButton function
 		
 		
 });//end document ready
+
+// ===========================
+// Hamburger Animation
+// ===========================
+var menu = document.getElementById("menu");
+menu.addEventListener("click", toggleAnimation);
+
+function toggleAnimation() {
+  var menuLineOne = menu.querySelector(".menu span:nth-child(1)");
+  var menuLineTwo = menu.querySelector(".menu span:nth-child(2)");
+  var menuLineThree = menu.querySelector(".menu span:nth-child(3)");
+  menuLineOne.classList.toggle("animated");
+  menuLineTwo.classList.toggle("animated");
+  menuLineThree.classList.toggle("animated");
+//   dropdown animation
+  $('#nav_2_dropdown').slideToggle();
+}
+
+
+
+// Menu slider animation
+// let toggleButton = $('#toggleButton');
+
+// toggleButton.click(function() {
+//   $('#nav_2_dropdown').slideToggle();
+// }
+// );
+
+// If the screen is less than 768 wide, remove inline styles from #dropDown
+$(window).resize(function() {
+  if ($(window).width() < 425) {
+     console.log('Less than 768');
+  }
+ else {
+    console.log('More than 768');
+   $('#nav_2_dropdown').removeAttr("style");
+ }
+});
